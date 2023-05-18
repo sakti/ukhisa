@@ -1,11 +1,17 @@
+import { Metadata } from 'next'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Ukhisa',
   description: 'Ukhuwah Bani Sapar',
+  icons: {
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
+  }
 }
 
 export default function RootLayout({
